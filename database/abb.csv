@@ -1,0 +1,7 @@
+Vendor,Product,Product Number,Serial Number,MAC,Software,Release Year?,Exclude
+ABB,CM577,,,00:02:A2:1D:C0:66,,,
+ABB,PM544,,,00:24:59:0A:2A:69,,,
+ABB,PM554,,,00:24:59:0A:4C:B7,,,X
+ABB,PM554 ,,,00:24:59:0A:51:53,,,
+ABB,PM554 ,,,00:24:59:0A:58:B0,,,X
+ABB,PM554 ,,,00:24:59:0A:77:EE,,,

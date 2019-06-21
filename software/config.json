@@ -1,0 +1,13 @@
+{
+    "log_level":        "info", 
+    "parse_file":       "true",    
+    "interface":        "wlp3s0",
+    "capturing":        "2",
+    "pcap_file":        "../pcap/Rack_arp.pcap",    
+    "data_fold":        "../database/",
+    "oui_file":         "oui.txt",
+    "oui_url":          "http://standards-oui.ieee.org/oui.txt",
+    "oui_time":         "1",
+    "vuln_time":        "1",
+    "vuln_vendors":      "siemens, moxa, phoenix, lantronix, micronics, crouzet, wago, hirschmann, alliedtelesis, schneider, abb"
+}
