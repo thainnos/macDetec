@@ -13,13 +13,13 @@ Owing to a growing number of attacks, the assessment of Industrial Control Syste
 
 ## Discovery
 
-The device discoery is working completely passive with ARP requests broadcasted to the network.
+The device discovery is working completely passive with ARP requests broadcasted to the network.
 From these broadcasts, the MAC address is used to look up devices with a similar MAC address in the database of macDetec.
-If the found device is within a certrain range of a known device, it is likely that these devices are the same product.
+If the found device is within a certain range of a known device, it is likely that these devices are the same product.
 
-## Vunlerability Mapping
+## Vulnerability Mapping
 
-With the above information a vulnerability mapping is done by querring the cve-details web API.
+With the above information a vulnerability mapping is done by querying the cve-details web API.
 
 # Testbed
 The testbed used for the evaluation can be seen in the following figure.
