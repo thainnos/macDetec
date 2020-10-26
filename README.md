@@ -1,5 +1,8 @@
 # macDetec - Device Identification by MAC Address
 
+![Python Integration](https://github.com/hsainnos/macDetec/workflows/pythonBuild%20and%20Lint/badge.svg)
+![Python Bandit](https://github.com/hsainnos/macDetec/workflows/pythonBandit/badge.svg)
+
 The software provided here serves as a PoC implementation.
 The corresponding paper was presented at the ICS-CSR 2018.
 
