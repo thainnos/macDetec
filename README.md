@@ -29,6 +29,20 @@ The testbed used for the evaluation can be seen in the following figure.
 </td></tr></table>
 
 # Installation
+Install docker and docker compose, which is required for the vulnerability databse.
+E.g. installation guide for docker https://docs.docker.com/engine/install/ 
+and docker compose https://docs.docker.com/compose/install/ .
+
+Clone the repo.
+```zsh
+git clone https://github.com/cve-search/CVE-Search-Docker
+```
+
+Change into the folder and run the docker installation.
+```zsh
+cd CVE-Search-Docker/
+docker-compose up
+```
 
 Install libpcap-dev for the analyzis of network captures (pcap).
 ```zsh
@@ -38,6 +52,18 @@ Install all dependencies necessary to run macDetec.
 
 ```zsh
 python3 -m pip install .
+```
+# Run macDetec
+
+In the CVE-Search-Docker git the container needs to be started
+```zsh
+docker-compose up
+```
+
+In the macDetec git, change to the software folder and start the application.
+```zsh
+cd software
+./macDetec.py
 ```
 
 # Paper

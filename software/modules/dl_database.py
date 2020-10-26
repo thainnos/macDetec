@@ -5,6 +5,9 @@ from urllib.request import urlopen
 import logging
 import json
 import sys
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 logger = logging.getLogger("")
 consoleHandler = logging.StreamHandler()
@@ -64,7 +67,7 @@ def get_vulns(filename, vuln_time=0, CVELIST=[]):
     # if vuln file is to old or vuln_time == 0 then download it
     if (int(difftime) > int(vuln_time * 60 * 60 * 24)) or (vuln_time == "0"):
         logger.info("Downloading vulnerable database for %s", filename)
-        url = 'http://cve.circl.lu/api/search/' + filename
+        url = 'https://localhost/api/search/' + filename
         logging.info("Fetching %s", url)
         content = urlopen(url).read()
         f = open('files/' + filename + '.json', 'wb')
