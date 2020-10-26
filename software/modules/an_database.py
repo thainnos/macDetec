@@ -46,12 +46,12 @@ def get_device_list(data_fold):
     dev_counter = 0
     os.chdir(data_fold)
     for dev_file in glob.glob("*.csv"):
-       logger.info("Reading: %s", str(data_fold + dev_file)) 
+       logger.info("Reading: %s", str(data_fold + dev_file))
        dev_counter = 0
        with open(dev_file) as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
-                if row['Exclude'] is not "X":
+                if row['Exclude'] != "X":
                     dev_counter += 1
                     logger.debug("%s, %s, %s" %
                              (row['Vendor'], row['Product'], row['MAC']))
